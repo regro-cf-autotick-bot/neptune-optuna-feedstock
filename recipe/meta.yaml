@@ -1,5 +1,5 @@
 {% set name = "neptune-optuna" %}
-{% set version = "0.9.10" %}
+{% set version = "0.9.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/neptune-ai/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: cb61d1078ff05ada0807948488d81f83bc48b1e4d0339ec73ac72b4db5507050
+  sha256: 5519828ddd6e125c9ab871d73ec435ee9ea09d18e74658b451130bf0ef931971
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -41,7 +41,7 @@ about:
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: 'Neptune Client integration with Optuna'
+  summary: Neptune Client integration with Optuna
   doc_url: https://docs.neptune.ai/integrations-and-supported-tools/hyperparameter-optimization/optuna
   dev_url: https://github.com/neptune-ai/neptune-optuna
 
