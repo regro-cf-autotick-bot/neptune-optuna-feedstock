@@ -1,5 +1,5 @@
 {% set name = "neptune-optuna" %}
-{% set version = "0.9.13" %}
+{% set version = "0.9.15" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/neptune-ai/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 19dba37bfe82df311c76e34257032aaf721efc8931bd9e79211dd9d9344e85ec
+  sha256: 9abe52c1fd3f5758b7d01b4aa2d85841ede1fcc2bfe6b3d271bb3ec61019ed6e
 
 build:
   noarch: python
