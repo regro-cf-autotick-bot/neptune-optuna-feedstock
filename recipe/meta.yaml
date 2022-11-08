@@ -1,4 +1,5 @@
 {% set name = "neptune-optuna" %}
+{% set package_name = "neptune_optuna" %}
 {% set version = "0.10.0" %}
 
 package:
@@ -6,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ package_name }}-{{ version }}.tar.gz
   sha256: 6a85a058d69a250d3607e00e2ad3e43a2fd821b55563fd4ba044ab2d5f6df480
 
 build:
