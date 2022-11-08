@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ package_name }}-{{ version }}.tar.gz
-  sha256: 6a85a058d69a250d3607e00e2ad3e43a2fd821b55563fd4ba044ab2d5f6df480
+  sha256: 0a4d9442d716df14e1486714ca351513ac357f878b721a6d6fb9d275b3367877
 
 build:
   noarch: python
