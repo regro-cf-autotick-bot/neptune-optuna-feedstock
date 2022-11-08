@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/neptune-ai/{{ name }}/archive/{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 6a85a058d69a250d3607e00e2ad3e43a2fd821b55563fd4ba044ab2d5f6df480
 
 build:
@@ -25,11 +25,13 @@ requirements:
     - neptune-client >=0.9.10
     - optuna >=2.4
     - plotly
+    - poetry-dynamic-versioning
 
 test:
   imports:
     - neptune_optuna
     - neptune_optuna.impl
+    - neptune_optuna.__version__
   # For python packages, it is useful to run pip check. However, sometimes the
   # metadata used by pip is out of date. Thus this section is optional if it is
   # failing.
