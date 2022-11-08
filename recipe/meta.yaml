@@ -32,7 +32,6 @@ test:
   imports:
     - neptune_optuna
     - neptune_optuna.impl
-    - neptune_optuna.__version__
   # For python packages, it is useful to run pip check. However, sometimes the
   # metadata used by pip is out of date. Thus this section is optional if it is
   # failing.
