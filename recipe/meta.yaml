@@ -25,6 +25,7 @@ requirements:
     - python >=3.6
     - neptune-client >=0.9.10
     - optuna >=2.4
+    - scikit-learn
     - plotly
     - poetry-dynamic-versioning
 
