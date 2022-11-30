@@ -1,6 +1,6 @@
 {% set name = "neptune-optuna" %}
 {% set package_name = "neptune_optuna" %}
-{% set version = "0.10.0" %}
+{% set version = "0.10.1" %}
 
 package:
   name: {{ name|lower }}
