@@ -1,13 +1,14 @@
 {% set name = "neptune-optuna" %}
-{% set version = "0.9.13" %}
+{% set package_name = "neptune_optuna" %}
+{% set version = "0.10.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/neptune-ai/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 19dba37bfe82df311c76e34257032aaf721efc8931bd9e79211dd9d9344e85ec
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ package_name }}-{{ version }}.tar.gz
+  sha256: 3b408d6403db1bb83ffd7e483f5691f5105e8b94bca6279d1dc72989e1a823eb
 
 build:
   noarch: python
@@ -16,13 +17,17 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
+    - poetry-core >=1.0.0
+    - poetry-dynamic-versioning
   run:
-    - python >=3.6
+    - python >=3.7
     - neptune-client >=0.9.10
     - optuna >=2.4
+    - scikit-learn >=0.24.1
     - plotly
+    - poetry-dynamic-versioning
 
 test:
   imports:
@@ -50,6 +55,8 @@ extra:
     - aniezurawski
     - HubertJaworski
     - pitercl
-    - PiotrJander
     - shnela
-    - pkasprzyk
+    - Raalsky
+    - twolodzko
+    - AleksanderWWW
+    - PatrykGala
