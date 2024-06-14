@@ -23,7 +23,7 @@ requirements:
     - poetry-dynamic-versioning
   run:
     - python >=3.7
-    - neptune-client >=0.9.10
+    - neptune >=1.0.0
     - optuna >=2.4
     - scikit-learn >=0.24.1
     - plotly
@@ -55,8 +55,6 @@ extra:
     - aniezurawski
     - HubertJaworski
     - pitercl
-    - shnela
     - Raalsky
-    - twolodzko
     - AleksanderWWW
     - PatrykGala
