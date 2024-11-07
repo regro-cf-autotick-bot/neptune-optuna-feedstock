@@ -1,6 +1,6 @@
 {% set name = "neptune-optuna" %}
 {% set package_name = "neptune_optuna" %}
-{% set version = "1.2.0" %}
+{% set version = "1.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ package_name }}-{{ version }}.tar.gz
-  sha256: b0c7df2afc704357cb6510f8e6525a38a689049059076afe986ca039264e4210
+  sha256: ca8886eff35986a33650de7091cacd7caa8d5602c2bf22f5a3478c2915a53453
 
 build:
   noarch: python
