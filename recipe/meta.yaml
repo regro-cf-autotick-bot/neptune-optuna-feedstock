@@ -12,17 +12,17 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - poetry-core >=1.0.0
     - poetry-dynamic-versioning
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - neptune >=1.0.0
     - optuna >=2.4
     - scikit-learn >=0.24.1
@@ -38,6 +38,7 @@ test:
   # failing.
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
